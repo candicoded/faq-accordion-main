@@ -30,11 +30,10 @@ main {
 
 .star-icon {
   width: 0.7em;
-  margin-right: 1em;
+  margin-right: 0.7em;
 }
 
 h1 {
-  margin-bottom: 0.6em;
   color: var(--darkPurple);
 }
 
@@ -42,11 +41,12 @@ h1 {
   font-weight: 600;
   font-size: 1rem;
   color: var(--darkPurple);
-  cursor: pointer;
-  border: none;
-  background: transparent;
   text-align: left;
-  display: block;
+  position: relative;
+  cursor: pointer;
+  margin: 1.5em 0;
+  display: grid;
+  grid-template-columns: 80% 20%;
 }
 
 .question:hover {
@@ -55,10 +55,13 @@ h1 {
 
 .question::after {
   content: url("./assets/images/icon-plus.svg");
-  float: right;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
 }
 
- .active {
+.active::after{
   content: url("./assets/images/icon-minus.svg");
 } 
 
@@ -66,11 +69,13 @@ h1 {
   color: var(--grayishPurple);
   font-size: 0.9rem;
   line-height: 1.5;
-  padding: 1em 0;
+  padding-bottom: 1.5em;
+  display: none;
 }
 
 hr {
   color: var(--lightPink);
+  opacity: 0.2;
 }
 
 footer {
