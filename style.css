@@ -53,18 +53,24 @@ h1 {
   color: rgb(179, 38, 179);
 }
 
-.question:after {
+.question::after {
   content: url("./assets/images/icon-plus.svg");
+  float: right;
 }
 
-/* .question:after:hover {
+ .active {
   content: url("./assets/images/icon-minus.svg");
-} */
+} 
 
 .answer {
   color: var(--grayishPurple);
   font-size: 0.9rem;
   line-height: 1.5;
+  padding: 1em 0;
+}
+
+hr {
+  color: var(--lightPink);
 }
 
 footer {
