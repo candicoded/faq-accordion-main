@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/candicoded/faq-accordion-main
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://candicoded.github.io/faq-accordion-main-jq/
 
 ## My process
 
